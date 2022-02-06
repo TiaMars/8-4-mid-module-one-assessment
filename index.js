@@ -26,7 +26,26 @@ const animals = [
  * getTotalCount(animals); //> 28
  * getTotalCount([]); //> 0 // returns 0 if the input array is empty
  */
-function getTotalCount(animals) {}
+function getTotalCount(animals) {
+  let count = 0;
+  for( i = 0; i < animals.length; i++)
+      count += count + 1
+    console.log(count)
+  }
+  for ( i = 0; i < animals[i].length; i++){
+    count += animals[i].length
+    console.log(count)
+  };
+  
+  
+
+// for( i = 0; i < animals.length; i++){
+//   count += animals.length
+//   return count
+// }
+  
+// I was able to make a test pass, if the input was empty return 0, but since everything else wasnt running, I attempted to get thoes first. In that process I was able to get a sum, but it wasnt adding the numbers correctly. 
+// I am having trouble recollecting the function I used. 
 
 /**
  * FUNCTION DESCRIPTION
@@ -40,8 +59,40 @@ function getTotalCount(animals) {}
  * getAllKinds(animals); //> ["Pig", "Cow", "Chicken", "Horse", "Dog", "Cat"]
  * getAllKinds([]); //> [] // returns empty array if input array is empty
  */
-function getAllKinds(animals) {}
+function getAllKinds(animals) {
+  let newArr = []
+  for(let newArr of animals){
+    animals = kind.push(newArr)
+    console.log(newArr)
+    return newArr
+  }
+  
+  
+  
+  for(let kind of animals){
+  kind.push(newArr);
+  console.log(newArr)
+  }
+  return newArr
+  
+  }
+  // for( i = 0; i < animals[i].length; i++){
+  //   kinds = animals[i].length
+  //   console.log(kinds)
+  //   return kinds
 
+
+//   let animalArr = [animals];
+
+
+// console.log(animalsArr)
+
+
+  // }
+
+
+
+// Unsure of the arrays I am getting. 
 /**
  * FUNCTION DESCRIPTION
  * ------------------
@@ -59,7 +110,9 @@ function getAllKinds(animals) {}
   ];
  * filterByCountMinimum([], 3); //> [] // returns empty array if input array is empty
  */
-function filterByCountMinimum(animals, minimum) {}
+function filterByCountMinimum(animals, minimum) {
+
+}
 
 /**
  * FUNCTION DESCRIPTION
@@ -82,3 +135,5 @@ module.exports = {
   filterByCountMinimum,
   getMostCommonAnimal,
 };
+
+//I felt comfortable after yesterday practing with  these loops and arrays, but everytime I get to complex problems like this I get deflated. I am confident on how I attempt to solve them but I cant get it to finish. 
